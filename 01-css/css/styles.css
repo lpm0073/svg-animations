@@ -1,0 +1,46 @@
+.ball {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  background: black;
+  animation: animation-name-you-pick 2s 2s 3 alternate ease-in-out forwards;
+}
+
+.ball2 {
+  animation: second-animation 2s 2s 3 alternate ease-in-out forwards;
+}
+
+.ball3 {
+  animation: second-animation 2s 2s 3 alternate ease-in-out forwards;
+}
+
+@keyframes animation-name-you-pick {
+   0% {
+    background: blue;
+    transform: translateX(0);
+  }
+   50% {
+    background: purple;
+    transform: translateX(50px);
+  }
+   100% {
+    background: red;
+    transform: translateX(200px);
+  }
+}
+
+@keyframes second-animation {
+   0% {
+    fill: blue;
+    transform: translateX(0);
+  }
+   50% {
+    fill: purple;
+    transform: translateX(50px);
+  }
+   100% {
+    fill: red;
+    transform: translateX(100px);
+  }
+}
